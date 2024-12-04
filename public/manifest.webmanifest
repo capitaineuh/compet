@@ -1,0 +1,16 @@
+{
+    "name": "Mon Blog PWA",
+    "short_name": "Blog PWA",
+    "description": "Blog accessible présentant des articles intéressants",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/pwa-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ]
+  }
