@@ -2,45 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Styles d'accessibilité personnalisés */
-:focus {
-    outline: 2px solid #2563eb;
-    outline-offset: 2px;
+@layer base {
+    body {
+        @apply text-gray-900 antialiased;
+    }
+
+    @screen lg {
+        html {
+            @apply text-lg;
+        }
+    }
 }
 
-.skip-link {
-    @apply sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black;
+@layer components {
+    .btn {
+        @apply px-6 py-2 rounded-full transition-colors;
+    }
+    
+    .btn-primary {
+        @apply bg-cyan-200 hover:bg-cyan-300 text-black;
+    }
+
+    @screen lg {
+        .container {
+            @apply max-w-7xl;
+        }
+    }
 }
 
-/* Support du mode sombre */
-.dark {
-    @apply bg-gray-900 text-white;
-}
-
-.dark .bg-white {
-    @apply bg-gray-800;
-}
-
-.dark .text-gray-600 {
-    @apply text-gray-300;
-}
-
-.dark .text-gray-800 {
-    @apply text-white;
-}
-/* Styles pour améliorer la lisibilité */
-body {
-    @apply text-base leading-relaxed;
-    font-family: system-ui, -apple-system, sans-serif;
-}
-
-/* Styles pour le contraste et la lisibilité */
-a {
-    @apply underline-offset-2;
-}
-
-/* Styles pour les éléments interactifs */
-button, 
-[role="button"] {
-    @apply cursor-pointer;
+@layer utilities {
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 }

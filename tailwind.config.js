@@ -4,12 +4,34 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        cyan: {
+          50: '#E0FFFF',
+          200: '#90EE90',
+          300: '#7FFFD4',
+        },
+        yellow: {
+          50: '#FFFACD',
+          200: '#FFE4B5',
+          300: '#FFE4B5',
+        },
+        red: {
+          50: '#FFE4E1',
+          200: '#FFB6C1',
+          300: '#FFA07A',
+        },
+        pink: {
+          50: '#FFF0F5',
+        }
+      },
       container: {
         center: true,
-        padding: '1rem',
+        padding: {
+          DEFAULT: '1rem',
+          lg: '2rem',
+        },
       },
     },
   },
