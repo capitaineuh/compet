@@ -1,7 +1,7 @@
 {
-    "name": "Mon Blog PWA",
-    "short_name": "Blog PWA",
-    "description": "Blog accessible présentant des articles intéressants",
+    "name": "Antidote PWA",
+    "short_name": "Antidote PWA",
+    "description": "Antidote PWA",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
