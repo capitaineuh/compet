@@ -18,4 +18,5 @@ Alpine.data('cookieConsent', () => ({
     }
 }))
 
+
 Alpine.start()
