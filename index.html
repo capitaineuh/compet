@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body class="bg-white">
-    <div x-data="app">
-        <header class="fixed top-0 w-full bg-white shadow-sm z-50">
+    <div>
+        <header class="fixed top-0 w-full bg-cyan-50 shadow-sm z-50">
             <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
                 <img src="/src/assets/logo.webp" alt="Antidote" class="h-8">
                 <div class="hidden lg:flex space-x-8">
@@ -23,8 +23,7 @@
         </header>
 
         <main class="pt-16">
-            <!-- Hero Section -->
-            <section class="bg-cyan-50 px-4 py-12 lg:py-24 lg:min-h-screen lg:flex lg:items-center">
+            <section class="bg-white px-4 py-12 lg:py-24 lg:min-h-screen lg:flex lg:items-center">
                 <div class="container mx-auto lg:flex lg:items-center lg:justify-between">
                     <div class="text-center lg:text-left lg:w-1/2">
                         <h1 class="text-3xl lg:text-5xl font-bold mb-4">Vérifier,<br>c'est s'immuniser.</h1>
@@ -39,7 +38,6 @@
                 </div>
             </section>
 
-            <!-- What is Antidote Section -->
             <section id="cest-quoi" class="bg-yellow-50 px-4 py-12 lg:py-24">
                 <div class="container mx-auto lg:max-w-4xl lg:text-center">
                     <h2 class="text-2xl lg:text-4xl font-bold mb-4">L'antidote : c'est quoi ?</h2>
@@ -91,7 +89,7 @@
             </section>
 
             <!-- Statistics Section -->
-            <section id="chiffres" class="bg-pink-50 px-4 py-12 lg:py-24">
+            <section id="chiffres" class="relative bg-pink-50 px-4 py-12 lg:py-24">
                 <div class="container mx-auto">
                     <h2 class="text-2xl lg:text-4xl font-bold mb-8 text-center">Les conséquences en chiffres</h2>
                     <div class="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -108,7 +106,6 @@
                             <p class="text-gray-600">des utilisateurs de réseaux sociaux redoutent d'être manipulés par les informations ou les algorithmes de ces plateformes.</p>
                         </div>
                     </div>
-                </div>
             </section>
 
             <!-- Footer -->
@@ -182,6 +179,9 @@
                 </div>
             </div>                      
         </main>
+    </div>
+    <div class="fixed bottom-7 right-7">
+        <img src="src/assets/chatBulle.png" alt="logo Chat">
     </div>
     <script type="module" src="/src/main.js"></script>
 </body>
