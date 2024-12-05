@@ -1,0 +1,21 @@
+{
+    "rewrites": [
+      { "source": "/sw.js", "destination": "/public/sw.js" },
+      { "source": "/manifest.webmanifest", "destination": "/public/manifest.webmanifest" }
+    ],
+    "headers": [
+      {
+        "source": "/sw.js",
+        "headers": [
+          { "key": "Service-Worker-Allowed", "value": "/" }
+        ]
+      },
+      {
+        "source": "/manifest.webmanifest",
+        "headers": [
+          { "key": "Content-Type", "value": "application/manifest+json" }
+        ]
+      }
+    ]
+  }
+  
