@@ -8,23 +8,27 @@ export default {
     extend: {
       colors: {
         cyan: {
-          50: '#E0FFFF',
-          200: '#90EE90',
-          300: '#7FFFD4',
-        },
-        yellow: {
-          50: '#FFFACD',
-          200: '#FFE4B5',
-          300: '#FFE4B5',
+          DEFAULT: '#96EBE9',
+          70: 'rgba(150, 235, 233, 0.7)',
+          50: 'rgba(150, 235, 233, 0.5)',
+          20: 'rgba(150, 235, 233, 0.2)',
         },
         red: {
-          50: '#FFE4E1',
-          200: '#FFB6C1',
-          300: '#FFA07A',
+          DEFAULT: '#F38D8F',
+          70: 'rgba(243, 141, 143, 0.7)',
+          50: 'rgba(243, 141, 143, 0.5)',
+          20: 'rgba(243, 141, 143, 0.2)',
         },
-        pink: {
-          50: '#FFF0F5',
-        }
+        yellow: {
+          DEFAULT: '#F4F271',
+          70: 'rgba(244, 242, 113, 0.7)',
+          50: 'rgba(244, 242, 113, 0.5)',
+          20: 'rgba(244, 242, 113, 0.2)',
+        },
+
+      },
+      borderWidth: {
+        '16': '16px',
       },
       container: {
         center: true,
